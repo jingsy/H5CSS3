@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		
+		.box{
+			width: 300px;
+			height: 300px;
+			margin: 100px auto;
+			background-color: red;
+			
+			/*过渡属性*/
+			transition-property: width;
+
+			/*过渡持续时间*/
+			transition-duration: 4s;
+
+			/*运动曲线  linear, ease-out,ease-in,ease,ease-in-out*/
+			transition-timing-function:linear;
+
+			/*过渡延迟*/
+			transition-delay: 1s;
+
+			/*简写*/
+			transition: width 4s ease-in-out 0s;
+
+			/*如果希望所以属性过渡，使用all*/
+		}
+
+
+		.box:hover{
+			width: 600px;
+
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="box"></div>
+
+
+
+	<script type="text/javascript">
+		
+	</script>
+</body>
+</html>
+

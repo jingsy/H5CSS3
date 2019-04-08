@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		div{
+			width: 200px;
+			height: 200px;
+			background-color: pink;
+
+			animation: move 4s 3 linear;
+
+			/*动画名称*/
+			/*animation-name: move;
+
+			animation-duration: 2s;
+
+			animation-iteration-count: 3;
+
+			animation-direction: normal;
+			animation-direction: reverse;*/
+
+			/*设置动画结束后 盒子的保持状态，forwads是保持当前位置 backwards是回到原状态*/
+			/*animation-fill-mode: forwards;*/
+
+			/*运动曲线 linear*/
+			animation-timing-function: ease;
+		
+			/*运动曲线 steps（） 分几步完成 一帧一跳*/
+			animation-timing-function: steps(3);
+		}
+	
+		/*定义动画*/
+		@keyframes move{
+			0%{
+				transform: translateX(0px) translateY(0px) rotate(180deg);
+			}
+
+			100%{
+				transform: translateX(500px) translateY(0px);
+			}
+		}
+
+
+	</style>
+</head>
+<body>
+	 <div></div>
+
+
+
+	<script type="text/javascript">
+		
+	</script>
+</body>
+</html>
+

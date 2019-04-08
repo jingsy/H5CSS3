@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		body{
+			background-color: #000;
+			background: url(../../image/blibg.jpeg);
+
+		}
+		.sun{
+			width: 100px;
+			height: 100px;
+			position: absolute;
+			left: 50%;
+			top:50%;
+			transform:translate(-50%,-50%);
+			background-color: yellow;
+			box-shadow: 0 0 30px 3px gold;
+			border-radius: 50%;
+			/*background: url(../../image/chijiang.jpeg);*/
+			/*background-size: width:100px height:100px;*/
+		}
+		.earth{
+			width: 350px;
+			height: 350px;
+			position: absolute;
+			left: 50%;
+			top:50%;
+			/*保证居中*/
+			transform:translate(-50%,-50%);
+			border: 1px solid #ccc;
+			border-radius: 50%;
+
+			animation: rot 8s linear infinite;
+		}
+
+		.earth::before{
+			content: "";
+			width: 40px;
+			height: 40px;
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform:translate(-50%,-50%);
+			background-color: dodgerblue;
+			border-radius: 50%;
+			background-image: url(../../image/muji.jpg);
+			background-size: cover;
+		}
+		.moon{
+			width: 80px;
+			height: 80px;
+			position: absolute;
+			left: 0;
+			top:50%;
+			transform:translate(-50%,-50%);
+			/*border: 1px solid #ccc;*/
+			border-radius: 50%;
+		
+			animation: rot 4s linear infinite;
+		}
+		.moon::before{
+			content: "";
+			width: 10px;
+			height: 10px;
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform:translate(-50%,-50%);
+			background-color: #fff;
+			border-radius: 50%;
+			background-image: url(../../image/van.jpeg);
+			background-size: cover;
+		}
+		.venus{
+			width: 500px;
+			height: 500px;
+			position: absolute;
+			left: 50%;
+			top:50%;
+			transform:translate(-50%,-50%);
+			border: 1px solid #ccc;
+			border-radius: 50%;
+
+			animation: rot 6s linear infinite;
+		}
+
+		.venus::before{
+			content: "";
+			width: 30px;
+			height: 30px;
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform:translate(-50%,-50%);
+			background-color: red;
+			border-radius: 50%;
+			background-image: url(../../image/xiangjiaojun.jpeg);
+			background-size: cover;
+		}
+		.mars{
+			width: 600px;
+			height: 600px;
+			position: absolute;
+			left: 50%;
+			top:50%;
+			transform:translate(-50%,-50%);
+			border: 1px solid #ccc;
+			border-radius: 50%;
+			animation: rot 10s linear infinite;
+		}
+		.mars::before{
+			content: "";
+			width: 60px;
+			height: 60px;
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform:translate(-50%,-50%);
+			background-color: pink;
+			border-radius: 50%;
+			background-image: url(../../image/bli.jpg);
+			background-size: cover;
+
+		}
+		img{
+			border-radius: 50%;
+		}
+		/*定义动画*/
+		@keyframes rot{
+			0%{
+				transform: translate(-50%,-50%) rotate(0deg);
+			}
+
+			100%{
+				transform: translate(-50%,-50%) rotate(360deg);
+			}
+		}
+
+
+	</style>
+</head>
+<body>
+	 <div class="sun">
+	 	<img src="../../image/chijiang.jpeg" width=100px height=100px>
+	 </div>
+	 <div class="earth">
+	 	<div class="moon"></div>
+	 </div>
+	<div class="venus"></div>
+	<div class="mars"></div>
+	
+
+
+	<script type="text/javascript">
+		
+	</script>
+</body>
+</html>
+
